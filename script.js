@@ -7,7 +7,8 @@ $(function(){
     var title = redditArray[i].data.title;
     var author = redditArray[i].data.author;
     var score = redditArray[i].data.score;
-     $('section').append('<div><h2>' + title + '</h2><h3>' + author + '</h3><h4>' + score + '</h4><img src="' + thumbnail+'"></div>');
+    var link = redditArray[i].data.permalink;
+     $('section').append('<a href="' + "https://reddit.com" + link + '"><div><img src="' + thumbnail + '" /><h2>' + "Title: " + title + '</h2><h3>' + "Author: " + author + '</h3><h4>' + "Score: " + score + '</h4></div></a>');
      }
   });
 

@@ -1,7 +1,33 @@
 div {
   border: 2px solid black;
+  height: auto;
+  margin: 10px 0px 10px 0px;
+}
+
+body {
+  background-color: #cee3f8;
+}
+
+section {
+    background-color: white;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+h3 {
+  color: blue;
+}
+
+h4 {
+  color: red;
 }
 
 img {
+  border: 1px dashed black;
   float: right;
+  height: 150px;
+  width: 150px;
 }
