@@ -1,7 +1,7 @@
 $(function(){
 
-  $.get("https://www.reddit.com/r/aww/.json", function(goodness){
-    var redditArray = goodness.data.children;
+  $.get("https://www.reddit.com/r/aww/.json", function(stuff){
+    var redditArray = stuff.data.children;
     for(i=0; i<redditArray.length; i++){
     var thumbnail = redditArray[i].data.thumbnail;
     var title = redditArray[i].data.title;
